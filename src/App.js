@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './Pages/Home/Home';
+import TopBar from './Components/TopBar/TopBar';
+import Single from './Pages/Single/Single';
+import Write from './Pages/Write/Write';
+import Settings from './Pages/Settings/Settings';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<TopBar />
+			<Settings />
+		</>
+	);
 }
 
 export default App;
